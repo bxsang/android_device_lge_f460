@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/full_f460.mk
+	$(LOCAL_DIR)/aosp_f460.mk

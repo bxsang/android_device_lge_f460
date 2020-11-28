@@ -14,17 +14,21 @@
 # limitations under the License.
 #
 
-
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common AospExtended stuff
+$(call inherit-product, vendor/aosp/common.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+# Inherit from LG F460
 $(call inherit-product, device/lge/f460/device.mk)
+
+# Boot animation resolution
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := f460
-PRODUCT_NAME := lineage_f460
+PRODUCT_NAME := aosp_f460
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LG-F460
+PRODUCT_MANUFACTURER := LGE
