@@ -25,3 +25,10 @@ PRODUCT_NAME := mk_f460
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LG-F460
 PRODUCT_MANUFACTURER := LGE
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_DEVICE="tiger6" \
+    PRODUCT_NAME="tiger6_skt_kr" \
+    PRIVATE_BUILD_DESC="tiger6_skt_kr-user 6.0 MRA58K 16116190959d7 release-keys"
+
+BUILD_FINGERPRINT="lge/tiger6_skt_kr/tiger6:6.0/MRA58K/16116190959d7:user/release-keys"
